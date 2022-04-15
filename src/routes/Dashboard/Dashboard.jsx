@@ -4,10 +4,12 @@ import {MainContent, SideBar, TopBar} from '../../containers';
 const Dashboard = () => {
   return (
     <div className="container-fluid">
-      <TopBar />
       <div className="row">
         <SideBar />
-        <MainContent />
+        <div className="col-10 p-0">
+          <TopBar />
+          <MainContent />
+        </div>
       </div>
     </div>
   );

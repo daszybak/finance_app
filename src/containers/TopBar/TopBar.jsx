@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TopBar = () => {
-  return <div className="row p-3 border border-red">TopBar</div>;
+  return <div className="p-3">Search</div>;
 };
 
 export default TopBar;
