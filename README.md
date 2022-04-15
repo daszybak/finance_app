@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# FINANCE APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## HOW TO START
 
-## Available Scripts
+Napravio sam branch s tvojim imenom pa tamo rokaj i onda prije pusha na master pullaj (dolje lijevo u VS codeu ti pise na kojem si branchu)
+Prvo runnaj "npm i" u terminalu onda "npm start" da pokrenes live server
 
-In the project directory, you can run:
+Rokas u folderima components za te male komponente, containers za spoj komponenti i assets.
+U folderu gdje se nalazi komponenta mozemo staviti css/scss za to komponentu makar je bolje koristiti bootstrap classe direktno u jsxu(html, css i js u kombinaciji ovo sta vidis u return/render funkciji. )
 
-### `npm start`
+U package.json pod dependencies mozes vidjeti sve libraryje koji su instalirani u projekt
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Za CSS nemoj koristiti piksele tipa za font size i to nego rem-ove. Stavio sam da je jedan rem po defaultu 10px
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## EXTENSIONS
 
-### `npm test`
+### VS CODE
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Dobri extensioni: Bracket pair colorizer (lakse vidis zagrade), ES7+ React/Redux/React-Native snippets (odmah pomocu shortcuta ti ispise komponentu bilo klasa ili funkcija), ESLint (muss, prikazuje ti errore i warningse precompilation), IntelliCode, npm, npm Intellisense, Prettier (konfiguriras, ako vec nisi da ti se na change of focus autosave i primijeni code cleanup), PowerShell, Sapling (Vidis react component tree unutar vs codea, a u chromeu mozes preko react developer tools vidjet component tree), Thunder Client (za testiranje APIja unutar VS code), vscode-icons (preglednije ikone i folderi)
 
-### `npm run build`
+### CHROME
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ColorZilla (da iskopiras boju s neke druge stranice u chromeu), React Developer Tools, Redux devtools (Mozes pregledati kako se mijenja state unutar aplikacije),
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## FOLDER STRUCTURE
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### ASSETS
 
-### `npm run eject`
+Images, videos, audios, icons, etc.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### COMPONENTS
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Reusable components: navbar, buttons, forms, loading spinner
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+\*JEDINO KOMPONENTE, CONTAINERI I PAGES SU PRVO SLOVO VELIKO I ZA SVAKU IDUCU RIJEC (PascalCase). ostali fileovi (kebab-case), a funkcije i variable unutar fileova(camelCase), CONSTANTS (CAPITAL_CASE)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### CONTAINERS
 
-## Learn More
+Header, Footer, Sidebar, Topbar, Charts, Stock Info, etc.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### HOOKS
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Custom hooks - this folder can also be placed closer to the components that use the custom hooks
 
-### Code Splitting
+### ROUTES
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+pages
 
-### Analyzing the Bundle Size
+### SERVICES
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Authentication: Sign up, log in
 
-### Making a Progressive Web App
+### STORE
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Redux - only one store
 
-### Advanced Configuration
+### UTILS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Reusable functions, constants
 
-### Deployment
+## CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Bootstrap
 
-### `npm run build` fails to minify
+### SASS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+bootstrap documentation: https://getbootstrap.com/docs/5.1/getting-started/introduction/
+customize bootstrap: https://getbootstrap.com/docs/5.1/customize/sass/
+
+tutorial: https://www.youtube.com/watch?v=O_9u1P5YjVc&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR
+
+## VALIDATION AND FORMS
+
+yup and formik libraries
+
+## API
+
+Axios library. Jako popularan library, bolji od Fetch Apija koji je ugradjen u browser
+
+U api folderu napravis axios.create i exportas ga tipa (export const yahoo) i onda u fileu gdje ga koristis importas yahoo iz tog foldera i yahoo.get(...)
+
+https://axios-http.com/docs/intro
