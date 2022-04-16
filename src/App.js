@@ -1,11 +1,12 @@
 import {Routes, Route} from 'react-router';
+import {MainContent} from './containers';
 import {Dashboard} from './routes/index';
 
 function App() {
   return (
     <Routes>
-      <Route path="/">
-        <Route index element={<Dashboard />} />
+      <Route path="/" element={<Dashboard />}>
+        <Route index={true} element={<MainContent />} />
       </Route>
     </Routes>
   );
