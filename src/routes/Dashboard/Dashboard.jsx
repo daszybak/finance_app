@@ -1,14 +1,14 @@
 import React from 'react';
-import {MainContent, SideBar, TopBar} from '../../containers';
+import {SideBar} from '../../containers';
+import {Layout} from '../../components';
+import {Outlet} from 'react-router-dom';
 
 const Dashboard = () => {
   return (
-    <div className="container-fluid">
-      <div className="row">
-        <SideBar />
-        <MainContent />
-      </div>
-    </div>
+    <Layout>
+      <SideBar />
+      <Outlet />
+    </Layout>
   );
 };
 

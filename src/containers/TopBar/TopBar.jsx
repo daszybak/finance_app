@@ -2,7 +2,10 @@ import React from 'react';
 
 const TopBar = () => {
   return (
-    <div className="border row align-items-center" style={{minHeight: '70px'}}>
+    <div
+      className="col border row align-items-center"
+      style={{minHeight: '70px'}}
+    >
       <div className="col-9">
         <h6>Search</h6>
       </div>

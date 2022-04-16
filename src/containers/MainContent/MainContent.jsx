@@ -6,10 +6,10 @@ import './main-content.scss';
 
 const MainContent = () => {
   return (
-    <div className="col-10">
+    <div className="col">
       <TopBar />
       <div>
-        <h6>MainContent</h6>
+        <h6>MainContent (Stock data, charts)</h6>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import {NavbarDesktop} from '../../components';
 
 const SideBar = () => {
   return (
-    <aside className="vh-100 col-2 d-flex flex-column flex-shrink-0 bg-light p-3 pt-0">
+    <aside className="vh-100 d-flex flex-column flex-shrink-0 bg-light p-3 pt-0 col-2">
       <div className="d-flex flex-column h-100">
         <div>
           <h5 className="d-flex align-items-center" style={{minHeight: '70px'}}>
