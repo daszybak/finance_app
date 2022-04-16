@@ -6,10 +6,7 @@ const Dashboard = () => {
     <div className="container-fluid">
       <div className="row">
         <SideBar />
-        <div className="col-10 p-0">
-          <TopBar />
-          <MainContent />
-        </div>
+        <MainContent />
       </div>
     </div>
   );
