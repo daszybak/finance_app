@@ -17,8 +17,8 @@ import './navbar.scss';
 
 const NavbarDesktop = () => {
   return (
-    <nav className="d-flex flex-column justify-content-between h-100">
-      <div className="d-flex flex-column gap-4 mb-4">
+    <nav className="flex flex-col justify-between h-full">
+      <div className="flex flex-col gap-4 mb-4">
         <NavbarLink to="/">
           <IoHomeOutline /> Home
         </NavbarLink>
@@ -35,19 +35,17 @@ const NavbarDesktop = () => {
           <IoChatbubblesOutline /> Chat
         </NavbarLink>
       </div>
-      <div className="d-flex flex-column gap-4 bottom-0">
+      <div className="flex flex-col gap-4 bottom-0">
         <NavbarLink to="settings">
           <IconContext.Provider value={{className: 'icon__mt-2'}}>
-            <div>
-              <IoSettingsOutline /> Settings
-            </div>
+            <IoSettingsOutline />
+            <h6>Settings</h6>
           </IconContext.Provider>
         </NavbarLink>
-        <NavbarLink className="d-flex align-items-end" to="logout">
+        <NavbarLink to="logout">
           <IconContext.Provider value={{className: 'icon__mt-2'}}>
-            <div>
-              <IoLogOutOutline /> Log out
-            </div>
+            <IoLogOutOutline />
+            <h6> Log out</h6>
           </IconContext.Provider>
         </NavbarLink>
       </div>

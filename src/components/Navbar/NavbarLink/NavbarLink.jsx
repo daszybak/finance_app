@@ -13,12 +13,10 @@ const NavbarLink = ({to, children}) => {
   return (
     <Link
       to={to}
-      className={`text-dark text-decoration-none btn ${
-        isMatch && 'btn-primary text-white'
-      }`}
+      className={` ${isMatch && 'bg-blue rounded text-white'}  no-underline`}
       type="button"
     >
-      <h6 className="d-flex align-items-center gap-2 mb-0 p-1">{children}</h6>
+      <div className="flex items-center gap-2 mb-0 p-2">{children}</div>
     </Link>
   );
 };
