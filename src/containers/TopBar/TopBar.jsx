@@ -2,17 +2,14 @@ import React from 'react';
 
 const TopBar = () => {
   return (
-    <div
-      className="col border row align-items-center"
-      style={{minHeight: '70px'}}
-    >
-      <div className="col-9">
+    <div className="row-[1/1] col-[3/-1] grid grid-cols-6 items-center border h-[70px]">
+      <div>
         <h6>Search</h6>
       </div>
-      <div className="col">
+      <div className="col-start-5">
         <p>Languages</p>
       </div>
-      <div className="col">
+      <div className="col-start-6">
         <p>Light/Dark Mode</p>
       </div>
     </div>

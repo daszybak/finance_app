@@ -60,14 +60,9 @@ Reusable functions, constants
 
 ## CSS
 
-### Bootstrap
+### TAILWIND CSS
 
-### SASS
-
-bootstrap documentation: https://getbootstrap.com/docs/5.1/getting-started/introduction/
-customize bootstrap: https://getbootstrap.com/docs/5.1/customize/sass/
-
-tutorial: https://www.youtube.com/watch?v=O_9u1P5YjVc&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR
+https://tailwindcss.com/
 
 ## VALIDATION AND FORMS
 
@@ -80,3 +75,7 @@ Axios library. Jako popularan library, bolji od Fetch Apija koji je ugradjen u b
 U api folderu napravis axios.create i exportas ga tipa (export const yahoo) i onda u fileu gdje ga koristis importas yahoo iz tog foldera i yahoo.get(...)
 
 https://axios-http.com/docs/intro
+
+### ICONS
+
+react-icons
