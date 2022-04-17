@@ -1,5 +1,6 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -8,6 +9,7 @@ module.exports = {
         yellow: '#FCA311',
         gray: '#E5E5E5',
         white: '#FFFFFF',
+        bgBlack: '#18191a',
       },
       gridTemplateColumns: {
         16: 'repeat(16, minmax(0, 1fr))',

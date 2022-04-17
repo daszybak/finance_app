@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ThemeToggle from '../../components/ThemeToggle/ThemeToggle';
+
 const TopBar = () => {
   return (
     <div className="row-[1/1] col-[3/-1] grid grid-cols-6 items-center border h-[70px]">
@@ -10,7 +12,7 @@ const TopBar = () => {
         <p>Languages</p>
       </div>
       <div className="col-start-6">
-        <p>Light/Dark Mode</p>
+        <ThemeToggle />
       </div>
     </div>
   );
