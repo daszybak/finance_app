@@ -9,7 +9,8 @@ module.exports = {
         yellow: '#FCA311',
         gray: '#E5E5E5',
         white: '#FFFFFF',
-        bgBlack: '#18191a',
+        bgBlack: '#18191A',
+        bgGray: '#4d4d4d',
       },
       gridTemplateColumns: {
         16: 'repeat(16, minmax(0, 1fr))',
