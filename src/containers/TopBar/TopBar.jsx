@@ -4,7 +4,7 @@ import ThemeToggle from '../../components/ThemeToggle/ThemeToggle';
 
 const TopBar = () => {
   return (
-    <div className="row-[1/1] col-[3/-1] grid grid-cols-6 items-center border h-[70px]">
+    <div className="row-[1/1] col-[2/-1] grid grid-cols-6 items-center border h-[70px]">
       <div>
         <h6>Search</h6>
       </div>

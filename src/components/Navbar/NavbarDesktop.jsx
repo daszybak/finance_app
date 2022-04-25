@@ -15,9 +15,9 @@ import NavbarLink from './NavbarLink/NavbarLink';
 
 import './navbar.scss';
 
-const NavbarDesktop = () => {
+const NavbarDesktop = ({className}) => {
   return (
-    <nav className="flex flex-col justify-between h-full">
+    <nav className={`flex flex-col justify-between h-full ${className}`}>
       <div className="flex flex-col gap-4 mb-4">
         <NavbarLink to="/">
           <IoHomeOutline /> Home
