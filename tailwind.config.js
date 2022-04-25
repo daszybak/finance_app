@@ -20,5 +20,13 @@ module.exports = {
       },
     },
   },
+  variants: {
+    extend: {
+      width: ['group-open'],
+      top: ['group-open'],
+      transform: ['group-open'],
+      left: ['group-open'],
+    },
+  },
   plugins: [],
 };

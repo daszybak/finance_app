@@ -7,9 +7,6 @@ const NavbarLink = ({to, children}) => {
   const resolvedPath = useResolvedPath(to);
   const isMatch = useMatch({path: resolvedPath.pathname, end: true});
 
-  console.log(resolvedPath);
-  console.log(isMatch);
-
   return (
     <Link
       to={to}
