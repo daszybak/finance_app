@@ -20,31 +20,31 @@ const NavbarDesktop = ({className}) => {
     <nav className={`flex flex-col justify-between h-full ${className}`}>
       <div className="flex flex-col gap-4 mb-4">
         <NavbarLink to="/">
-          <IoHomeOutline /> Home
+          <IoHomeOutline size={'20px'} /> Home
         </NavbarLink>
         <NavbarLink to="news">
-          <IoNewspaperOutline /> News
+          <IoNewspaperOutline size={'20px'} /> News
         </NavbarLink>
         <NavbarLink to="watchlist">
-          <IoListOutline /> Watchlist
+          <IoListOutline size={'20px'} /> Watchlist
         </NavbarLink>
         <NavbarLink to="calculator">
-          <IoCalculatorOutline /> Calculator
+          <IoCalculatorOutline size={'20px'} /> Calculator
         </NavbarLink>
         <NavbarLink to="chat">
-          <IoChatbubblesOutline /> Chat
+          <IoChatbubblesOutline size={'20px'} /> Chat
         </NavbarLink>
       </div>
       <div className="flex flex-col gap-4 bottom-0">
         <NavbarLink to="settings">
           <IconContext.Provider value={{className: 'icon__mt-2'}}>
-            <IoSettingsOutline />
+            <IoSettingsOutline size={'20px'} />
             <h6>Settings</h6>
           </IconContext.Provider>
         </NavbarLink>
         <NavbarLink to="logout">
           <IconContext.Provider value={{className: 'icon__mt-2'}}>
-            <IoLogOutOutline />
+            <IoLogOutOutline size={'20px'} />
             <h6> Log out</h6>
           </IconContext.Provider>
         </NavbarLink>
