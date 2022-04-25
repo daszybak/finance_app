@@ -5,7 +5,7 @@ const {innerWidth: width} = window;
 const sidebarSlice = createSlice({
   name: 'sidebar',
   initialState: {
-    sidebarStatus: width < 900 || width > 1280 ? false : true,
+    sidebarStatus: width < 900 ? false : true,
   },
   reducers: {
     toggle(state) {
