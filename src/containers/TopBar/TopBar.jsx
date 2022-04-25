@@ -3,7 +3,7 @@ import React from 'react';
 import ThemeToggle from '../../components/ThemeToggle/ThemeToggle';
 import BurgerMenu from '../../components/BurgerMenu/BurgerMenu';
 
-const TopBar = () => {
+const TopBar = ({className}) => {
   return (
     <div className="row-[1/1] col-[1/-1] grid grid-cols-[82px_repeat(5,1fr)] xl:grid-cols-[220px_repeat(5,1fr)] items-center border h-[70px]">
       <div className="hidden xl:flex xl:justify-center xl:items-center">
